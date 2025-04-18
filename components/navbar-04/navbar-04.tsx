@@ -17,13 +17,9 @@ const Navbar04Page = () => {
             <NavMenu className="hidden md:block" />
 
             <div className="flex items-center gap-3">
-              <Button
-                variant="outline"
-                className="hidden sm:inline-flex rounded-full"
-              >
-                Sign In
+              <Button className="rounded-full text-base bg-orange-500 hover:bg-orange-600 text-white">
+                Get Started
               </Button>
-              <Button className="rounded-full">Get Started</Button>
 
               {/* Mobile Menu */}
               <div className="md:hidden">

@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import React from "react";
 
@@ -22,8 +23,11 @@ const Hero03 = () => {
           <Button
             size="lg"
             className="rounded-full text-base bg-orange-500 hover:bg-orange-600 text-white"
+            asChild
           >
-            Learn more <ArrowUpRight className="!h-5 !w-5" />
+            <Link href="/About">
+              Learn more <ArrowUpRight className="!h-5 !w-5" />
+            </Link>
           </Button>
         </div>
       </div>
