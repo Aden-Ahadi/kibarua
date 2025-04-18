@@ -48,13 +48,6 @@ export default function HeroSection() {
             loads—Kibarua brings reliable workers right to your doorstep.
           </p>
         </div>
-
-        {/* Scroll indicator - only show on desktop */}
-        <div className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-8 h-12 rounded-full border-2 border-white/50 flex items-start justify-center">
-            <div className="w-1 h-3 bg-white/80 rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
       </div>
     </section>
   );

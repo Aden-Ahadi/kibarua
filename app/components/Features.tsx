@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 interface ProjectCardProps {
@@ -87,13 +86,11 @@ export default function PopularProjects() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-9">
         {visibleProjects.map((project, index) => (
-          <Link href="#" key={index}>
-            <ProjectCard
-              title={project.title}
-              work={project.work}
-              imageSrc={project.imageSrc}
-            />
-          </Link>
+          <ProjectCard
+            title={project.title}
+            work={project.work}
+            imageSrc={project.imageSrc}
+          />
         ))}
       </div>
 
