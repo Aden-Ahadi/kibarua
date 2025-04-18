@@ -35,6 +35,7 @@ const Contact02Page = () => (
             <Link
               className="font-medium text-orange-600 hover:text-orange-700"
               href="mailto:info@kibarua.works"
+              target="_blank"
             >
               info@kibarua.works
             </Link>
@@ -52,6 +53,7 @@ const Contact02Page = () => (
             <Link
               className="font-medium text-orange-600 hover:text-orange-700"
               href="https://wa.me/255714530292"
+              target="_blank"
             >
               Start new chat
             </Link>
@@ -85,6 +87,7 @@ const Contact02Page = () => (
             <Link
               className="font-medium text-orange-600 hover:text-orange-700"
               href="https://wa.me/255714530292"
+              target="_blank"
             >
               +255 714 530 292
             </Link>
@@ -150,7 +153,7 @@ const Contact02Page = () => (
                   <Label htmlFor="acceptTerms" className="text-orange-900/80">
                     You agree to our{" "}
                     <Link
-                      href="#"
+                      href=""
                       className="text-orange-600 hover:text-orange-700 underline"
                     >
                       terms and conditions
