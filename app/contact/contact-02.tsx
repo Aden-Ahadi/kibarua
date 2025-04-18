@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -145,22 +144,6 @@ const Contact02Page = () => (
                     className="mt-1.5 bg-white shadow-sm border-orange-200 focus:border-orange-500 focus:ring-orange-500"
                     rows={6}
                   />
-                </div>
-                <div className="col-span-2 flex items-center gap-2">
-                  <Checkbox
-                    id="acceptTerms"
-                    className="border-orange-200 data-[state=checked]:bg-orange-500"
-                  />
-                  <Label htmlFor="acceptTerms" className="text-orange-900/80">
-                    You agree to our{" "}
-                    <Link
-                      href=""
-                      className="text-orange-600 hover:text-orange-700 underline"
-                    >
-                      terms and conditions
-                    </Link>
-                    .
-                  </Label>
                 </div>
               </div>
               <Button
