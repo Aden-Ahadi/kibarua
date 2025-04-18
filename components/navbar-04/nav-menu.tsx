@@ -46,7 +46,7 @@ export const NavMenu = ({ onLinkClick, ...props }: NavMenuProps) => (
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
           <Link
-            href="#"
+            href="/contact"
             className={cn(
               "text-lg font-medium transition-colors hover:text-orange-500",
               "data-[orientation=vertical]:text-xl data-[orientation=vertical]:py-2"

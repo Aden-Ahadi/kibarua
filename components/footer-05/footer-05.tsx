@@ -13,7 +13,7 @@ const footerLinks = [
   },
   {
     title: "Contact",
-    href: "#",
+    href: "/contact",
   },
 ];
 
