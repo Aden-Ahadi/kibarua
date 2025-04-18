@@ -1,20 +1,15 @@
 import { Separator } from "@/components/ui/separator";
-import {
-  DribbbleIcon,
-  GithubIcon,
-  TwitchIcon,
-  TwitterIcon,
-} from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = [
   {
     title: "Home",
-    href: "#",
+    href: "/",
   },
   {
-    title: "About us",
-    href: "#",
+    title: "About",
+    href: "/About",
   },
   {
     title: "Contact",
@@ -27,8 +22,20 @@ const Footer05Page = () => {
     <div className="w-full">
       <footer>
         <div className="max-w-screen-xl mx-auto">
-          <div className="py-8 flex flex-col justify-start items-center">
-            {/* Logo */} KIBARUA
+          <div className="py-5 flex flex-col justify-start items-center">
+            {/* Logo */}
+            <Link href="/">
+              <div className="relative w-30 h-30 flex items-center">
+                <Image
+                  src="/worker.png"
+                  alt="Logo"
+                  width={100}
+                  height={100}
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </Link>
             <ul className="mt-4 flex items-center gap-4 flex-wrap">
               {footerLinks.map(({ title, href }) => (
                 <li key={title}>
