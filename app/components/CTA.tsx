@@ -1,6 +1,15 @@
+"use client";
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import waitlist from "@zootools/waitlist-js";
+
+const clickPopup = (event: { preventDefault: () => void }) => {
+  event.preventDefault();
+
+  // Pass your waitlist ID
+  waitlist.openPopup("KrkEV72L2KVuLSv3IJpO");
+};
 
 export const CTA1 = () => (
   <div className="w-full py-20 lg:py-40">
@@ -21,10 +30,10 @@ export const CTA1 = () => (
           </p>
         </div>
         <div className="flex flex-row gap-4">
-          <Button className="gap-4" variant="outline">
+          <Button className="gap-4" variant="outline" onClick={clickPopup}>
             Join as a worker <MoveRight className="w-4 h-4" />
           </Button>
-          <Button className="gap-4">
+          <Button className="gap-4" onClick={clickPopup}>
             Sign up as a user <MoveRight className="w-4 h-4" />
           </Button>
         </div>

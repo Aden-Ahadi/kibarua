@@ -1,7 +1,16 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Logo } from "./logo";
 import { NavMenu } from "./nav-menu";
 import { NavigationSheet } from "./navigation-sheet";
+import waitlist from "@zootools/waitlist-js";
+
+const clickPopup = (event: { preventDefault: () => void }) => {
+  event.preventDefault();
+
+  // Pass your waitlist ID
+  waitlist.openPopup("KrkEV72L2KVuLSv3IJpO");
+};
 
 const Navbar04Page = () => {
   return (
@@ -17,7 +26,10 @@ const Navbar04Page = () => {
             <NavMenu className="hidden md:block" />
 
             <div className="flex items-center gap-3">
-              <Button className="rounded-full text-base bg-orange-500 hover:bg-orange-600 text-white">
+              <Button
+                className="rounded-full text-base bg-orange-500 hover:bg-orange-600 text-white"
+                onClick={clickPopup}
+              >
                 Get Started
               </Button>
 

@@ -13,7 +13,7 @@ const Contact02Page = () => (
       <div className="text-center mb-12">
         <b className="text-orange-600">Contact Us</b>
         <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight text-orange-950">
-          Chat to our friendly team
+          Chat with our friendly team
         </h2>
         <p className="mt-3 text-base sm:text-lg text-orange-900/80">
           We&apos;d love to hear from you. Please fill out this form or shoot us
